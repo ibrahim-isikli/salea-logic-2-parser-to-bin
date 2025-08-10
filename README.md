@@ -6,13 +6,13 @@
 
 ## Data Flow
 
-Aşağıdaki diyagram, Saleae Logic 2’den alınan verilerin ImHex editöründe kullanılabilir hale gelene kadar izlediği adımları göstermektedir.
+The diagram below shows the steps that data from Saleae Logic 2 follows until it becomes available in the ImHex editor.
 
 ```mermaid
 flowchart LR
     A[Saleae Logic 2] -->|Export| B[.csv]
-    B -->|logic2_parser| C[parsed.csv]
-    C -->|logic2_parser_to_bin| D[.bin]
+    B -->|salea_logic2_parser| C[parsed.csv]
+    C -->|salea_logic2_parser_to_bin| D[.bin]
     D -->|Open in| E[ImHex Editor]
 ```
 
