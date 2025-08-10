@@ -6,3 +6,15 @@
 # İsteğe bağlı: derlenmiş/üretilmiş dosyaları da hariç tutabilirsin
 *.exe linguist-vendored
 *.spec linguist-vendored
+
+# TeX ve HTML dosyalarını dil istatistiğinden hariç tut
+*.tex linguist-detectable=false
+*.html linguist-vendored
+
+# Build/Dist klasörleri istatistik dışı
+build/* linguist-detectable=false
+dist/*  linguist-detectable=false
+
+# Derlenmiş/üretilmiş dosyalar
+*.exe linguist-vendored
+*.spec linguist-vendored
