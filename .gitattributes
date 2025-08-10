@@ -1,0 +1,8 @@
+# GitHub Linguist ayarları
+# Bu dosyalar dil istatistiklerine dahil edilmez
+*.tex linguist-vendored
+*.html linguist-vendored
+
+# İsteğe bağlı: derlenmiş/üretilmiş dosyaları da hariç tutabilirsin
+*.exe linguist-vendored
+*.spec linguist-vendored
